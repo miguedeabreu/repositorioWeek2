@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var library_1 = require("./library");
+var book_1 = require("./book");
+var libro1 = new book_1.Book("Harry Potter", 300, "2345", "J.K. Rowling", "Salamandra");
+var libro2 = new book_1.Book("El tiempo entre costuras", 165, "2212", "M. Dueñas", "Salamandra");
+var libro3 = new book_1.Book("Harry Potter 2", 300, "2345", "J.K. Rowling", "Salamandra");
+var libros = [libro1, libro2, libro3];
+var biblioteca = new library_1.Library(libros, "Madrid", "Miguel");
+console.log(biblioteca.toString());
+console.log("La cantidad de libros en la biblioteca es: " + biblioteca.getNumberOfBooks());
+console.log(biblioteca.findByAuthor("J.K. Rowling"));
