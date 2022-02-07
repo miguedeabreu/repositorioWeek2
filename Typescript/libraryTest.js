@@ -9,4 +9,5 @@ var libros = [libro1, libro2, libro3];
 var biblioteca = new library_1.Library(libros, "Madrid", "Miguel");
 console.log(biblioteca.toString());
 console.log("La cantidad de libros en la biblioteca es: " + biblioteca.getNumberOfBooks());
-console.log(biblioteca.findByAuthor("J.K. Rowling"));
+// console.log(biblioteca.findByAuthor("J.K. Rowling"));
+console.log(biblioteca.findByAuthor("M. Dueñas"));
